@@ -40,10 +40,10 @@
             <a class="nav-link js-scroll-trigger" href="#section2">Visualizations</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#section3">Section 3</a>
+            <a class="nav-link js-scroll-trigger" href="#section3">How I did it</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#section4">Section 4</a>
+            <a class="nav-link js-scroll-trigger" href="#section4">Sources</a>
           </li>
         </ul>
       </div>
@@ -96,7 +96,7 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h2>Visualizations</h2>
-          <p> class="lead">How many school-age youth reside in each town, and how has it changed over a decade?</p>
+          <p class="lead">How many school-age youth reside in each town, and how has it changed over a decade?</p>
 <p> To begin to answer this question I first needed to find data on the population of age groups in each of Hartford Counties towns. I found this data on Social Explorer, a website that contains census data on all types of demographics among the US. Social Explorer provided me with data for children ages 5-17 for the years 2010, 2017, and 2020.</p>
           
           <iframe title="Percent Change of School Aged Children from 2010-2020" aria-label="Split Bars" id="datawrapper-chart-gKd38" src="https://datawrapper.dwcdn.net/gKd38/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="895" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
@@ -118,10 +118,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>Section 3</h2>
-          <p>Give credit to people, organizations, resources, and tools that helped you to create this data story. Write in HTML format and include links when appropriate. If you wish to cite a reading, use any acceptable bibiography style and include a web link when available, similar to this sample:</p>
-          
-          <p> Rebecca Lurye, <a href='https://www.courant.com/community/hartford/hc-news-hartford-housing-code-20190531-hcke2jo2x5fpdgz75xf4hlv2ki-story.html'>“New Housing Code in Hartford Would Keep Slumlords from Hiding Behind LLCs,”</a> Hartford Courant, May 31, 2019.</p>
+          <h2>How I did it</h2>
+          <p> In creating this chart and map representing the changes in school aged children I used the website Social Explorer. I used it to find their American Community Survey (ACS) 5 year estimates for 2010, 2017, and 2020 (most recent year) to find the population of all ages of Connecticut's Subdivisions. When the data comes out of the website it has all the towns in Connecticut and age ranges of “5 and under” all the way to “85 and over” so I cleaned up the data in a Google Sheet to select the towns in Hartford County and the age ranges 5 to 9, 10 to 14, and 15 to 17. I then calculated the total population of 5 to 17 year olds for each year I was observing. I then normalized the data using the percent change formula in order to compare the populations of 2010 to 2020 and 2017 to 2020. I then used the website Datawrapper to create the split bar graph by pasting in the towns and corresponding percent changes of 2010 and 2020. To create the choropleth map I first used a website called Mapshapper to select the towns in Hartford County and create a geojson file that I could drop into Datawrapper to show a map of only Harford County. I then used the percent change data comparing 2017 to 2020 to create the choropleth map. In the map I choose to compare 2017 to 2020 in an attempt to be able to make comparisons to the Per Pupil Expenditure choropleth map to see if the migration of student students is followed by the increase of student spending. As a caution people should keep in mind that this map uses data from the American Community Survey 5 year estimates meaning there is an “uncertainty associated with them as a result of being based on a sample of the population rather than the full population” (Understanding and Using). Furthermore, the most recent data for 2020 was during the COVID-19 Pandemic which led to the inability to collect data from certain areas and populations causing the data to not be fully representative of the US population (Our Commitment).</p>
         </div>
       </div>
     </div>
@@ -133,7 +131,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>Section 4: Advanced Tips</h2>
+          <h2>Sources</h2>
 
           <p>Change names of `Section 1` etc. to customized navigation labels that make sense for your data story, such as `Why It Matters` or `How We Made This` etc. To do this you must change names in TWO places: see the Navigation Container (around lines 30-50) and the corresponding Sections below. Keep the section numbers but change the reader-friendly labels.</p>
 
@@ -212,8 +210,11 @@
 
 <footer class="py-5 bg-secondary">
   <div class="container">
-    <p class="m-0 text-center text-white">
-      Copyright &copy; by the author(s) 2022</br> Learn more at <a href="https://datavizforall.org">DataVizForAll.org</a>
+    <p Work Cited
+
+“Our Commitment to Quality: A Revised ACS Estimation Methodology.” The United States Census Bureau, https://www.census.gov/newsroom/blogs/random-samplings/2022/03/acs-5year-estimation-methodology.html. Accessed 16 Nov. 2022.
+“Segregation & Education.” School+State Finance Project, https://schoolstatefinance.org/issues/segregation-and-education. Accessed 11 Nov. 2022.
+“Understanding and Using American Community Survey Data: What All Data Users Need to Know.” Census.Gov, https://www.census.gov/programs-surveys/acs/library/handbooks/general.html. Accessed 16 Nov. 2022.
     </p>
   </div>
 </footer>
