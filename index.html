@@ -96,7 +96,17 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h2>Visualizations</h2>
-          <p>Create a separate section to describe how you obtained your data, key steps in your process, and cautions for interpreting its meaning. Write for an audience of future DataViz students who may wish to replicate your steps. Write in HTML format and always include links to data sources, such as <a href='https://public-edsight.ct.gov/'>CT EdSight</a>, and also link to your shared Google Sheets.</p>
+          <p> class="lead">How many school-age youth reside in each town, and how has it changed over a decade?</p>
+<p> To begin to answer this question I first needed to find data on the population of age groups in each of Hartford Counties towns. I found this data on Social Explorer, a website that contains census data on all types of demographics among the US. Social Explorer provided me with data for children ages 5-17 for the years 2010, 2017, and 2020.</p>
+          
+          <iframe title="Percent Change of School Aged Children from 2010-2020" aria-label="Split Bars" id="datawrapper-chart-gKd38" src="https://datawrapper.dwcdn.net/gKd38/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="895" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+</script>
+    <p> The first chart is a split bar graph representing the percent changes in population of children ages 5-17 in Hartford County over a decade. This chart uses percent change accounts for the differing population size of each town and allows one to normalize that data to make it comparable to each town. It can be calculated using the formula: (New value - Old value) / Old value. When you get a negative percent change then the population decreases, and if it is positive then there was an increase in population. Over a decade, from the years 2010 to 2020, all but two towns, East Granbury and New Britain, had an overall increase in population size while the rest had a decrease in population.</p>
+          
+          <iframe title="Percent Change of Student Population ages 5-17 from 2017-2020" aria-label="Map" id="datawrapper-chart-7jtZP" src="https://datawrapper.dwcdn.net/7jtZP/5/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="694" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+</script>
+          <p> The first map is a choropleth map representing the percent change in population of children's ages 5-17 in Hartford County from 2017-2020. It uses a divergent color palette so when looking at this map the blue represents a positive percent change or an increase in population. The red represents a negative percent change or a decrease in population. The white neutral color means that the town had close to zero percent change in population. By looking at this map I could say that Bloomfield had the greatest increase in school age children because it is the darkest blue on the scale while Granby had the greatest decrease in population because it's the darkest red. Towns like Suffield, South Windsor, and Vernon are white neutral tone meaning they had very small percent change, or a little change in population. In the live link to this map you can hover over each town and see the population for the years 2010, 2017, and 2020. While hovering you can also find the percent change from 2010-2020 and from 2017-2020.</p>
+          
         </div>
       </div>
     </div>
@@ -110,9 +120,6 @@
         <div class="col-lg-8 mx-auto">
           <h2>Section 3</h2>
           <p>Give credit to people, organizations, resources, and tools that helped you to create this data story. Write in HTML format and include links when appropriate. If you wish to cite a reading, use any acceptable bibiography style and include a web link when available, similar to this sample:</p>
-
-          <iframe title="Percent Change of Student Population ages 5-17 from 2017-2020" aria-label="Map" id="datawrapper-chart-7jtZP" src="https://datawrapper.dwcdn.net/7jtZP/5/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="694" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
-</script>
           
           <p> Rebecca Lurye, <a href='https://www.courant.com/community/hartford/hc-news-hartford-housing-code-20190531-hcke2jo2x5fpdgz75xf4hlv2ki-story.html'>“New Housing Code in Hartford Would Keep Slumlords from Hiding Behind LLCs,”</a> Hartford Courant, May 31, 2019.</p>
         </div>
